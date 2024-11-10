@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="cont">
+    <div class="wrap">
+<div class="main">
+
+
+  <div class="setDate">
+<div class="unit">
+  <p>Day</p>
+  <input type="number" id="day" value=""  class="inputNum" mim="1" max="31" maxlength="2">
+</div>
+<div class="unit">
+  <p>Month</p>
+  <input type="number" id="month" value=""  class="inputNum"mim="1" max="12"maxlength="2">
+</div>
+<div class="unit">
+  <p>Year</p>
+  <input type="number" id="year" value=""  class="inputNum" mim="1955" max="2024" maxlength="4">
+</div>
+<p id="showErro" >you have error in entry</p>
+<span class="logo" id="btn"><img src="/images/logo.png" alt=""></span>
+  </div>
+
+
+  <div class="calcDate">
+    <div class="unitShow">
+      <span class="design" id="y">--</span>
+      <h1>years</h1>
+    </div>
+    <div class="unitShow">
+      <span class="design" id="m">--</span>
+      <h1>months</h1>
+    </div>
+    <div class="unitShow">
+      <span class="design" id="d">23</span>
+      <h1>days</h1>
+    </div>
+      </div>
+    </div>
+</div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">MO.Osman</a>.
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

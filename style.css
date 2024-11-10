@@ -1,0 +1,130 @@
+@font-face {
+  font-family: popin;
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+  src: url(/assets/fonts/Poppins-BoldItalic.ttf);
+  src: url(/assets/fonts/Poppins-ExtraBold.ttf);
+  src: url(/assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  src: url(/assets/fonts/Poppins-Italic.ttf);
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+.cont {
+  font-family: popin;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cont .wrap {
+  width: calc(100% - 3rem);
+  background-color: hsl(0, 0%, 94%);
+  box-shadow: 0 4px 8px hsl(0, 1%, 44%);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont .wrap .main {
+  width: min(100% - 3rem, 600px);
+  min-width: 300px;
+  margin: 0 auto;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 0.8rem 0.8rem 50% 0.8rem;
+}
+.cont .wrap .main .setDate {
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  color: hsl(0, 1%, 44%);
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  font-size: 0.8rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.cont .wrap .main .setDate .unit > p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+.cont .wrap .main .setDate .inputNum {
+  border: 1px solid hsl(0, 0%, 86%);
+  color: hsl(0, 0%, 8%);
+  font-size: 1rem;
+  width: 7rem;
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.cont .wrap .main .setDate #showErro {
+  color: hsl(0, 100%, 67%);
+  position: absolute;
+  top: 55%;
+  left: 0;
+  display: none;
+}
+.cont .wrap .main .setDate .logo {
+  width: 3rem;
+  height: 3rem;
+  background-color: hsl(259, 100%, 65%);
+  position: relative;
+  top: 5.9rem;
+  left: 20%;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.cont .wrap .main .setDate .logo img {
+  text-align: center;
+}
+.cont .wrap .main .calcDate {
+  font-size: 32px;
+}
+.cont .wrap .main .calcDate .unitShow .design {
+  color: hsl(259, 100%, 65%);
+  font-weight: bolder;
+  font-size: 4rem;
+}
+.cont .wrap .main .calcDate .unitShow h1 {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    width: calc(100% - 3rem);
+    min-width: 250px;
+    padding: 1rem;
+  }
+  .main .setDate {
+    font-size: 0.5rem;
+  }
+  .main .setDate .inputNum {
+    font-size: 0.8rem;
+    width: 3rem;
+  }
+  .main .setDate .logo {
+    width: 2rem;
+    height: 2rem;
+    top: 2rem;
+    left: 10%;
+  }
+  .main .calcDate {
+    font-size: 20px;
+  }
+  .main .calcDate .unitShow h1 {
+    display: inline;
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
